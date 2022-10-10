@@ -7,7 +7,7 @@ import Password from "./components/Password/Password";
 import Strength from "./components/Strength/Strength";
 
 import { useState } from "react";
-import { generateRandomPassword } from "./utils";
+import { generateUnionSet } from "./utils";
 
 const App = () => {
   const [password, setPassword] = useState();
@@ -30,7 +30,7 @@ const App = () => {
   const errorMessage = <p>Can not generate password!</p>;
 
   const handleGenerate = () => {
-    const newPassword = generateRandomPassword(values, passwordLength);
+    const newPassword = generateUnionSet(values, passwordLength);
     setPassword(newPassword);
     setStrengthColors(true);
     setError(errorMessage);
