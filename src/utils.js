@@ -22,7 +22,7 @@ const randomPassGenerator = (length, chars) => {
   return randomPassword;
 };
 
-export const generateRandomPassword = (values, passwordLength) => {
+export const generateUnionSet = (values, passwordLength) => {
   let newCharSet = "";
   const mapTOflags = {
     hasUpperCase: withUppercaseLetters.join(""),
