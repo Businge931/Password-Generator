@@ -37,7 +37,10 @@ const Password = ({ password, error, errorMessage }) => {
       </h4>
       <p className={classes.password_copied}>
         <span className={classes.copied}>{isCopied && "copied"}</span>
-        <FaRegCopy className={classes.copiedIcon} onClick={handleCopyClick} />
+        <FaRegCopy
+          className={classes.copiedIcon}
+          onClick={password && handleCopyClick}
+        />
       </p>
     </div>
   );
