@@ -40,6 +40,6 @@ export const generateUnionSet = (values, passwordLength) => {
       return newCharSet;
     }
   });
-  console.log("char set", newCharSet);
+  // console.log("char set", newCharSet);
   return randomPassGenerator(passwordLength, newCharSet);
 };
