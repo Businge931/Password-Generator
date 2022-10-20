@@ -14,6 +14,7 @@
   font-size: 0.8rem;
   font-weight: 300;
   padding-inline-start: 0.6rem;
+  pointer-events: none;
 }
 .strengthColors {
   display: flex;
