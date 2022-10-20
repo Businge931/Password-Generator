@@ -10,6 +10,7 @@ const Checkboxes = ({ values, onChangesHandler }) => {
           className={classes.checkbox}
           onChange={onChangesHandler}
           name="hasUpperCase"
+          id="uppercase"
           checked={values.hasUpperCase}
         />
         <label htmlFor="uppercase" className={classes.label}>
@@ -22,6 +23,7 @@ const Checkboxes = ({ values, onChangesHandler }) => {
           className={classes.checkbox}
           onChange={onChangesHandler}
           name="hasLowerCase"
+          id="lowercase"
           checked={values.hasLowerCase}
         />
         <label htmlFor="lowercase" className={classes.label}>
@@ -34,6 +36,7 @@ const Checkboxes = ({ values, onChangesHandler }) => {
           className={classes.checkbox}
           onChange={onChangesHandler}
           name="hasNumbers"
+          id="numbers"
           checked={values.hasNumbers}
         />
         <label htmlFor="numbers" className={classes.label}>
@@ -46,6 +49,7 @@ const Checkboxes = ({ values, onChangesHandler }) => {
           className={classes.checkbox}
           onChange={onChangesHandler}
           name="hasSymbols"
+          id="symbols"
           checked={values.hasSymbols}
         />
         <label htmlFor="symbols" className={classes.label}>
