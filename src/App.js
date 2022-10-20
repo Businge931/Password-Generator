@@ -11,7 +11,7 @@ import { generateUnionSet } from "./utils";
 
 const App = () => {
   const [password, setPassword] = useState();
-  const [passwordLength, setPasswordLength] = useState(5);
+  const [passwordLength, setPasswordLength] = useState(6);
   const [strengthColors, setStrengthColors] = useState(false);
   const [error, setError] = useState("");
 
