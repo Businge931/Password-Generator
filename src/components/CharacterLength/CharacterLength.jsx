@@ -3,7 +3,7 @@ import { useState, useRef } from "react";
 import classes from "./CharacterLength.module.css";
 
 const CharacterLength = ({ passwordLength, setPasswordLength }) => {
-  const [spn, setSpn] = useState();
+  // const [spn, setSpn] = useState();
 
   const inputRef = useRef(null);
 
